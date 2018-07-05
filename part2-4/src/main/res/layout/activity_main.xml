@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding = "16dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/icon"
+        android:maxHeight="70dp"
+        android:maxWidth = "70dp"
+        android:adjustViewBounds="true"/>
+
+    <!-- date TextView를 화면 오른쪽으로 밀기 위하여 LinearLayout에 weight 속성 부여-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jason"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Jason! How have you been?"
+            android:layout_marginTop = "16dp"
+            android:layout_marginLeft = "16dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "18.03.12"
+        android:layout_marginLeft = "16dp" />
+</LinearLayout>

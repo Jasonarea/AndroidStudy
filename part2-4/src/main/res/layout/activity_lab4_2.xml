@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id = "@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/icon"
+        android:maxHeight="70dp"
+        android:maxWidth="70dp"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id = "@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft = "16dp"
+        android:text = "Jason"
+        android:textSize = "20dp"
+        android:textStyle="bold"
+        android:layout_toRightOf = "@id/icon" />
+
+    <TextView
+        android:id = "@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "16dp"
+        android:text = "Hi, how have you been?"
+        android:layout_below = "@id/name"
+        android:layout_alignLeft="@id/name"/>
+
+    <TextView
+        android:id = "@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "17.1.26"
+        android:layout_alignBaseline = "@id/name"
+        android:layout_alignParentRight = "true"/>
+</RelativeLayout>
