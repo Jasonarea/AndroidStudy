@@ -14,7 +14,7 @@ public class RealmReadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_realm_read);
 
-        TextView titleView = (TextView)findViewById(R.id.realm_add_title);
+        TextView titleView = (TextView)findViewById(R.id.realm_read_title);
         TextView contentview = (TextView)findViewById(R.id.realm_read_content);
 
         //넘어온 title 문자열 추출

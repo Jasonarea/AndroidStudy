@@ -24,7 +24,6 @@ public class Lab8_2Activity extends AppCompatActivity implements View.OnClickLis
 
         addBtn.setOnClickListener(this);
     }
-
     @Override
     public void onClick(View v) {
         final String title = titleView.getText().toString();
@@ -32,7 +31,7 @@ public class Lab8_2Activity extends AppCompatActivity implements View.OnClickLis
 
         Realm.init(this);
         Realm mRealm = Realm.getDefaultInstance();
-        mRealm.executeTransaction(new Realm.Transaction() {
+        mRealm.executeTransaction(new Realm.Transaction(){
             @Override
             public void execute(Realm realm) {
                 MemoVO vo = realm.createObject(MemoVO.class);
