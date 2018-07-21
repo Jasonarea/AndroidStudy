@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hyeon.part5_15">
+    package="com.example.hyeon.part5_16">
 
     <application
         android:allowBackup="true"
@@ -16,11 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailActivity" />
-        <activity
-            android:name=".DialogActivity"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity android:name=".Lab15_2Activity">
+        <activity android:name=".Lab16_2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Lab16_3Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
