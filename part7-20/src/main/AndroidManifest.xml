@@ -3,6 +3,7 @@
     package="com.example.hyeon.part7_20">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
         android:allowBackup="true"
@@ -38,6 +39,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".Lab4Service"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

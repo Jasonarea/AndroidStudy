@@ -55,8 +55,6 @@ public class Lab20_2Activity extends AppCompatActivity implements View.OnClickLi
         intent.setPackage("com.example.user.part7_20_aidl");
         intent.putExtra("filePath", filePath);
         bindService(intent, connection, Context.BIND_AUTO_CREATE);
-
-
     }
 
     ServiceConnection connection=new ServiceConnection() {
