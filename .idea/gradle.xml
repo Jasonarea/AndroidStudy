@@ -29,6 +29,8 @@
             <option value="$PROJECT_DIR$/part7-19" />
             <option value="$PROJECT_DIR$/part7-20" />
             <option value="$PROJECT_DIR$/part7-20-aidl" />
+            <option value="$PROJECT_DIR$/part7-21" />
+            <option value="$PROJECT_DIR$/part7-21-provider" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
