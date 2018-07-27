@@ -38,7 +38,7 @@ public class Lab25_2Activity extends AppCompatActivity {
 
         queue= Volley.newRequestQueue(this);
 
-        JsonObjectRequest jsonRequest=new JsonObjectRequest(Request.Method.GET, "http://70.12.205.94:8000/files/test.json", null, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonRequest=new JsonObjectRequest(Request.Method.GET, "http://192.168.4.171:8000/files/test.json", null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {

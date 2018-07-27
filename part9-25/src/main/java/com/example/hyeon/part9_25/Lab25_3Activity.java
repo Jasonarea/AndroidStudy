@@ -24,7 +24,7 @@ public class Lab25_3Activity extends AppCompatActivity {
                 .override(200, 200)
                 .into(gifView);
 
-        String url="http://70.12.205.94:8000/files/1.jpg";
+        String url="http://192.168.4.171:8000/files/1.jpg";
         Glide.with(this)
                 .load(url)
                 .override(400, 400)

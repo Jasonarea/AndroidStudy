@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         //문자열 http 요청
         //아래의 Url은 개발 시점의 서버 Url로 변형
         HttpRequester httpRequester=new HttpRequester();
-        httpRequester.request("http://localhost:8000/files/test.json", map, httpCallback);
+        httpRequester.request("http://192.168.4.171:8000/files/test.json", map, httpCallback);
 
 
     }
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     //결과 문자열에 이미지 파일정보가 있다면 다시 이미지 데이터 요청
                     //아래의 URL은 개발 시점의 서버 URL로 변경
                     HttpImageRequester imageRequester=new HttpImageRequester();
-                    imageRequester.request("http://70.12.205.94:8000/files/"+imageFile, null, imageCallback);
+                    imageRequester.request("http://192.168.4.171:8000/files/"+imageFile, null, imageCallback);
                 }
             }catch (Exception e){
                 e.printStackTrace();
